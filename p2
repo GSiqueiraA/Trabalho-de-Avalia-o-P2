@@ -1,0 +1,28 @@
+<html>
+<body>
+
+<html>
+<body>
+
+<h1> Preencha o formulário com sus dados</h1>
+
+<form id= "locadora"
+action="/interface.php">
+Nome:<input type="text" id="nomeid" value="insira seu nome aqui">
+Telefone<input type="telefone" id="telid"  value="">
+Cidade Retirada [Campos dos Goytacazes-RJ, Rio de Janeiro-RJ, Vitória-ES]<input type="retirada" id="retid">
+Cidade Entrega [Campos dos Goytacazes-RJ, Rio de Janeiro-RJ, Vitória-ES]<input type="entrega" id="entid">
+Data Retirada<input type="dataretirada" id="dRetid">
+Data Devolução<input type="datadevolucao" id="dDevid">
+Tipo de Carro: Básico (R$ 119,00),  Básico com Ar (R$ 199,00), Executivo(R$ 299,00)<input type="tipo" id="carroid">
+ <input type ="submit" value="enviar">
+    </form>
+    <script>
+    function valor(){
+document.form.getElementById("carroid");
+document.form.getElementById("retid");
+document.form.getElementById("entid");
+    }
+    </script>
+</body>
+</html>
