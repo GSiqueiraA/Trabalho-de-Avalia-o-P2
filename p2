@@ -24,8 +24,8 @@ let z = document.form.getElementById("entid").value;
   if (y==x) {
     alert("Lugar nao coincide");
   } else {
-    alert("Lugar coincide");
     x+300;
+    alert("Lugar coincide");
     }
 document.getElementById("locadora");
     }
