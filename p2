@@ -1,6 +1,4 @@
-<html>
-<body>
-
+<!DOCTYPE html>
 <html>
 <body>
 
@@ -14,15 +12,26 @@ Cidade Retirada [Campos dos Goytacazes-RJ, Rio de Janeiro-RJ, Vitória-ES]<input
 Cidade Entrega [Campos dos Goytacazes-RJ, Rio de Janeiro-RJ, Vitória-ES]<input type="entrega" id="entid">
 Data Retirada<input type="dataretirada" id="dRetid">
 Data Devolução<input type="datadevolucao" id="dDevid">
-Tipo de Carro: Básico (R$ 119,00),  Básico com Ar (R$ 199,00), Executivo(R$ 299,00)<input type="tipo" id="carroid">
- <input type ="submit" value="enviar">
+Tipo de Carro: Básico (R$ 119,00),  Básico com Ar (R$ 199,00), Executivo(R$ 299,00)<input type="tipo" id="carroid" value="insira o preco">
+ <button type="button" onclick="valor()">Enviar</button>
     </form>
     <script>
+   
     function valor(){
-document.form.getElementById("carroid");
-document.form.getElementById("retid");
-document.form.getElementById("entid");
+let x = document.form.getElementById("carroid").value;
+let y = document.form.getElementById("retid").value;
+let z = document.form.getElementById("entid").value;
+  if (y==x) {
+    alert("Lugar nao coincide");
+  } else {
+    alert("Lugar coincide");
+    x+300;
     }
+document.getElementById("locadora");
+    }
+    
+    
+    
     </script>
 </body>
 </html>
